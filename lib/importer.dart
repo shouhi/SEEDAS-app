@@ -3,9 +3,9 @@ export 'package:seedas/owners/signin.dart';
 
 export 'package:seedas/owners/storeInfo.dart';
 export 'package:seedas/owners/root.dart';
-export 'package:seedas/routes/blog/blog.dart';
-export 'package:seedas/routes/calender/calendar_route.dart';
-export 'package:seedas/routes/home/home.dart';
+export 'package:seedas/routes/profile/profile.dart';
+export 'package:seedas/routes/reserve/reserve.dart';
+export 'package:seedas/routes/rank/ranking.dart';
 
 // Widget
 
@@ -20,4 +20,6 @@ export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 export 'package:seedas/views/welcome.dart';
 export 'package:seedas/widgets/fade_animation.dart';
+export 'package:seedas/utils/const.dart';
+export 'package:seedas/utils/util.dart';
 export 'package:flutter/material.dart';

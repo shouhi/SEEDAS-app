@@ -15,20 +15,20 @@ class _RootWidgetState extends State<RootWidget> {
   static const _footerIcons = [
     Icons.home,
     Icons.calendar_today,
-    Icons.local_post_office,
+    Icons.account_circle,
   ];
 
   // アイコン文字列
   static const _footerItemNames = [
-    'ホーム',
-    'カレンダー',
-    'ブログ',
+    'ランキング',
+    '予約',
+    'プロフィール',
   ];
 
   var _routes = [
-    Home(),
-    Calendar(),
-    Blog(),
+    Ranking(),
+    Reserve(),
+    Profile(),
   ];
 
   @override

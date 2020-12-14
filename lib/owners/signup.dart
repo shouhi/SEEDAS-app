@@ -111,7 +111,12 @@ class _SignupState extends State<Signup> {
                 emailInputController.clear(),
                 pwdInputController.clear(),
               })
-          .catchError((err) => errorDialog(err));
+          .catchError((err) {
+        Utils.showErrorDialog(err, context);
+      })
+         .catchError((err) {
+        Utils.showErrorDialog(err, context);
+      });
     }
   }
 

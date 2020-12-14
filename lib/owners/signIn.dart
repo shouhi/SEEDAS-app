@@ -1,15 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:seedas/owners/signup.dart';
-
-// import 'package:seedas/shared/globals.dart';
-
-import 'package:seedas/views/welcome.dart';
-// import 'package:pro_task/views/signup.dart';
-// import 'package:pro_task/root.dart';
+import 'package:seedas/importer.dart';
 
 class SignIn extends StatefulWidget {
   SignIn({Key key}) : super(key: key);
@@ -107,7 +97,12 @@ class _SignInState extends State<SignIn> {
                 emailInputController.clear(),
                 pwdInputController.clear(),
               })
-          .catchError((err) => errorDialog(err));
+          .catchError((err) {
+        Utils.showErrorDialog(err, context);
+      })
+         .catchError((err) {
+        Utils.showErrorDialog(err, context);
+      });
     }
   }
 

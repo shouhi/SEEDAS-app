@@ -1,13 +1,13 @@
 import 'package:seedas/importer.dart';
 
-class Calendar extends StatefulWidget {
+class Reserve extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return CalendarState();
+    return ReserveState();
   }
 }
 
-class CalendarState extends State<Calendar> with TickerProviderStateMixin {
+class ReserveState extends State<Reserve> with TickerProviderStateMixin {
   Map<DateTime, List> _events = {};
   List _selectedEvents;
   List calenderList;
@@ -19,7 +19,6 @@ class CalendarState extends State<Calendar> with TickerProviderStateMixin {
   void initState() {
     isLoading = true;
     super.initState();
-    fetchCalenderList();
     final _selectedDay = DateTime.now();
     _selectedEvents = _events[_selectedDay] ?? [];
 
@@ -29,25 +28,6 @@ class CalendarState extends State<Calendar> with TickerProviderStateMixin {
     );
 
     _animationController.forward();
-  }
-
-  Future<void> fetchCalenderList() async {
-    final firebaseCalender =
-        await FirebaseFirestore.instance.collection('calenderList').get();
-    for (var i = 0; i < firebaseCalender.docs.length; i++) {
-      final calenderEvent = firebaseCalender.docs[i].get('event');
-      var expectedDay = DateTime.parse(
-          firebaseCalender.docs[i].get('expectedDay').toString());
-
-      _events[DateTime(
-        expectedDay.year.toInt(),
-        expectedDay.month.toInt(),
-        expectedDay.day.toInt(),
-      )] = calenderEvent;
-    }
-    setState(() {
-      isLoading = false;
-    });
   }
 
   @override
