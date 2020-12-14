@@ -1,11 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/material.dart';
+import 'package:seedas/importer.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:seedas/owners/signIn.dart';
-import 'package:seedas/owners/storeinfo.dart';
 
 // import 'package:seedas/shared/globals.dart';
 // import 'package:pro_task/root.dart';
@@ -99,7 +93,7 @@ class _SignupState extends State<Signup> {
               password: pwdInputController.text)
           .then((result) => {
             FirebaseFirestore.instance
-                .collection('memberProfile')
+                .collection('users')
                 .doc(FirebaseAuth.instance.currentUser.uid)
                 .set({
               'date': '',

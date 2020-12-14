@@ -1,7 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:seedas/importer.dart';
 
 class ProfileEdit extends StatefulWidget {
   @override
@@ -218,7 +216,10 @@ class _ProfileEdit extends State {
               ),
               onPressed: () async {
                 SaveData();
-                Navigator.pop(context);
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => RootWidget()),
+                    (_) => false);
               },
             )
           ])),
