@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "209854735516",
+    "project_id": "seedas",
+    "storage_bucket": "seedas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209854735516:android:0cc2411054e805b423f959",
+        "android_client_info": {
+          "package_name": "net.shohi.seedas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209854735516-ipm46q6fn86askotl7754eabo766j86k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoeJCU66XwKVkKdxX6IwWTKE5CWaWSl9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209854735516-ipm46q6fn86askotl7754eabo766j86k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "209854735516-lgeeasn4u3b8tb33gqtv7krs3vcc8ega.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.shohi.seedas"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
