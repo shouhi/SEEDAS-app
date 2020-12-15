@@ -92,7 +92,7 @@ class _SignInState extends State<SignIn> {
                 print("User id is ${result.user.uid}"),
                 Navigator.pushAndRemoveUntil(
                     context,
-                    MaterialPageRoute(builder: (context) => Welcome()),
+                    MaterialPageRoute(builder: (context) => RootWidget()),
                     (_) => false),
                 emailInputController.clear(),
                 pwdInputController.clear(),
