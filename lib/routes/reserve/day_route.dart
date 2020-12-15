@@ -1,13 +1,13 @@
 import 'package:seedas/importer.dart';
 
-class TotalPage extends StatefulWidget {
-  TotalPage({Key key}) : super(key: key);
+class DayPage extends StatefulWidget {
+  DayPage({Key key}) : super(key: key);
 
   @override
-  _TotalPageState createState() => _TotalPageState();
+  _DayPageState createState() => _DayPageState();
 }
 
-class _TotalPageState extends State<TotalPage> {
+class _DayPageState extends State<DayPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

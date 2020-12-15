@@ -8,6 +8,8 @@ export 'package:seedas/routes/reserve/reserve.dart';
 export 'package:seedas/routes/rank/ranking.dart';
 export 'package:seedas/routes/rank/mounth_route.dart';
 export 'package:seedas/routes/rank/total_route.dart';
+export 'package:seedas/routes/reserve/day_route.dart';
+
 
 // Widget
 
