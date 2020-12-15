@@ -8,6 +8,9 @@ class Const{
    "gray": const Color.fromRGBO(97, 97, 97, 1),
    "black": const Color.fromRGBO(128, 128, 128, 1),
    "mild_black": const Color.fromRGBO(40, 45, 48, 1),
-   "blue": const Color.fromRGBO(30, 71, 139, 1)
+   "blue": const Color.fromRGBO(30, 71, 139, 1),
+   "purple": const Color(0xff990099),
+   "green": const Color(0xff109618),
+   "orange": const Color(0xffff9900),
   };
 }

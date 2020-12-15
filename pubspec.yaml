@@ -26,6 +26,7 @@ dependencies:
 
   font_awesome_flutter: ^8.10.0
   simple_animations: ^2.2.3
+  charts_flutter: "^0.9.0"
 
   firebase_auth: ^0.18.1+1
   firebase_core: ^0.5.0
@@ -51,6 +52,7 @@ flutter:
   assets:
     - assets/Icon/logo.png
     - assets/Icon/coffee_time.png
+    - assets/Icon/ST_Hillslogo.JPG
 
   # To add assets to your application, add an assets section, like this:
   # assets:
