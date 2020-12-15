@@ -14,6 +14,15 @@ class _RankingState extends State<Ranking> {
       Tab(text: '通算'),
     ];
   }
+
+  List<Widget> _buildTabPages() {
+    return [
+      MounthlyPage(),
+      TotalPage(),
+    ];
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,6 +42,10 @@ class _RankingState extends State<Ranking> {
                   tabs: _buildTabs(),
                   labelColor: Colors.black,
                 ),
+              ),
+              body: TabBarView(
+                controller: _controller,
+                children: _buildTabPages(),
               ),
             )));
   }
