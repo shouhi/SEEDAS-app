@@ -1,20 +1,19 @@
 import 'package:seedas/importer.dart';
 
-class Blog extends StatefulWidget {
-  Blog({Key key}) : super(key: key);
+class Ranking extends StatefulWidget {
+  Ranking({Key key}) : super(key: key);
   @override
-  _BlogState createState() => _BlogState();
+  _RankingState createState() => _RankingState();
 }
 
-class _BlogState extends State<Blog> {
+class _RankingState extends State<Ranking> {
   TabController _controller;
   List<Widget> _buildTabs() {
     return [
-      Tab(text: 'blog'),
-      Tab(text: 'qiita'),
+      Tab(text: '月間'),
+      Tab(text: '通算'),
     ];
   }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,9 +23,15 @@ class _BlogState extends State<Blog> {
             child: Scaffold(
               appBar: AppBar(
                 centerTitle: true,
+                title: Image.asset(
+                  'assets/Icon/logo.png',
+                  height: 100,
+                ),
+                backgroundColor: Const.utilColor["white"],
                 bottom: TabBar(
                   controller: _controller,
                   tabs: _buildTabs(),
+                  labelColor: Colors.black,
                 ),
               ),
             )));

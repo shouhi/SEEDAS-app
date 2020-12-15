@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seedas/importer.dart';
 import 'package:seedas/views/welcome.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Welcome(),
+      home: RootWidget(),
     );
   }
 }
