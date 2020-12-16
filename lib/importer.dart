@@ -9,6 +9,8 @@ export 'package:seedas/routes/rank/ranking.dart';
 export 'package:seedas/routes/rank/mounth_route.dart';
 export 'package:seedas/routes/rank/total_route.dart';
 export 'package:seedas/routes/reserve/day_route.dart';
+export 'package:seedas/routes/search/search.dart';
+export 'package:seedas/routes/search/kobe.dart';
 
 
 // Widget

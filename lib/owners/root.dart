@@ -13,6 +13,7 @@ class _RootWidgetState extends State<RootWidget> {
 
   // アイコン情報
   static const _footerIcons = [
+    Icons.search,
     Icons.home,
     Icons.calendar_today,
     Icons.account_circle,
@@ -20,12 +21,14 @@ class _RootWidgetState extends State<RootWidget> {
 
   // アイコン文字列
   static const _footerItemNames = [
+    '探す',
     'ランキング',
     '予約',
     'プロフィール',
   ];
 
   var _routes = [
+    Search(),
     Ranking(),
     Reserve(),
     Profile(),
