@@ -14,5 +14,6 @@ class Const{
    "orange": const Color(0xffff9900),
    'mild_purple': const Color(0xff5c4db1),
    'pink': const Color(0xffdc4f89),
+   'favorite': const Color(0xFFEF7532),
   };
 }
