@@ -12,5 +12,7 @@ class Const{
    "purple": const Color(0xff990099),
    "green": const Color(0xff109618),
    "orange": const Color(0xffff9900),
+   'mild_purple': const Color(0xff5c4db1),
+   'pink': const Color(0xffdc4f89),
   };
 }
