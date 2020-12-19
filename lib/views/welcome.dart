@@ -19,23 +19,6 @@ class Welcome extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Column(
-                children: <Widget>[
-                  FadeAnimation(1, Text("Welcome", style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 40
-                  ),)),
-                  SizedBox(height: 20,),
-
-                  //ProTaskのキャッチコピーどか入れたい
-                  FadeAnimation(1.2, Text("「芽吹くための経験」", 
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.grey[700],
-                    fontSize: 30
-                  ),)),
-                ],
-              ),
               FadeAnimation(1.4, Container(
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
@@ -52,13 +35,33 @@ class Welcome extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => SignIn()));
                     },
+                    color: Colors.yellow,
                     shape: RoundedRectangleBorder(
                       side: BorderSide(
                         color: Colors.black
                       ),
                       borderRadius: BorderRadius.circular(50)
                     ),
-                    child: Text("オーナーはこちら", style: TextStyle(
+                    child: Text("店舗様はこちら", style: TextStyle(
+                      fontWeight: FontWeight.w600, 
+                      fontSize: 18,
+                      color: Colors.black,
+                    ),),
+                  )),
+                  SizedBox(height: 20,),
+                  FadeAnimation(1.5, MaterialButton(
+                    minWidth: double.infinity,
+                    height: 60,
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => SignIn()));
+                    },
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        color: Colors.black
+                      ),
+                      borderRadius: BorderRadius.circular(50)
+                    ),
+                    child: Text("学生様はこちら", style: TextStyle(
                       fontWeight: FontWeight.w600, 
                       fontSize: 18
                     ),),
@@ -78,10 +81,9 @@ class Welcome extends StatelessWidget {
                     child: MaterialButton(
                       minWidth: double.infinity,
                       height: 60,
-                      // onPressed: () {
-                      //   Navigator.push(context, MaterialPageRoute(builder: (context) => SignUp()));
-                      // },
-                      color: Colors.yellow,
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => SignIn()));
+                      },
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)
@@ -91,7 +93,8 @@ class Welcome extends StatelessWidget {
                         fontSize: 18
                       ),),
                     ),
-                  ))
+                  )
+                  )
                 ],
               )
             ],
