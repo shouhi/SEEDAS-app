@@ -11,6 +11,9 @@ export 'package:seedas/routes/rank/total_route.dart';
 export 'package:seedas/routes/reserve/day_route.dart';
 export 'package:seedas/routes/search/search.dart';
 export 'package:seedas/routes/search/kobe.dart';
+export 'package:seedas/utils/appBar.dart';
+export 'package:seedas/utils/drawer.dart';
+export 'package:seedas/password/password_change.dart';
 
 
 // Widget

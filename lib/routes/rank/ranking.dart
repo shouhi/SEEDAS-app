@@ -43,6 +43,7 @@ class _RankingState extends State<Ranking> {
                   labelColor: Colors.black,
                 ),
               ),
+              drawer: drawerMain(context),
               body: TabBarView(
                 controller: _controller,
                 children: _buildTabPages(),

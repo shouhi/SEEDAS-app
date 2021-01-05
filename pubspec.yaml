@@ -59,6 +59,16 @@ flutter:
     - assets/Icon/client2.jpeg
     - assets/Icon/client3.png
 
+    - assets/Hana/storeImage1.jpeg
+    - assets/Hana/storeImage2.jpeg
+    - assets/Hana/storeImage3.jpeg
+    - assets/Hana/storeImage4.jpeg
+    - assets/Hana/storeImage5.jpeg
+    - assets/Hana/storeImage6.jpeg
+    - assets/Hana/storeImage7.jpeg
+    - assets/Hana/storeImage8.jpeg
+    - assets/Hana/storeImage9.jpeg
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

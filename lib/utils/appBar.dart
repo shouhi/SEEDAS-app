@@ -6,7 +6,7 @@ Widget appBarMain(BuildContext context) {
     centerTitle: true,
     title: Image.asset(
       'assets/Icon/logo.png',
-      height: 55,
+      height: 100,
     ),
     backgroundColor: Const.utilColor["white"],
   );

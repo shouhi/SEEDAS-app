@@ -5,6 +5,8 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appBarMain(context),
+      drawer: drawerMain(context),
       body: Column(
         children: <Widget>[
           Container(
@@ -12,7 +14,7 @@ class Profile extends StatelessWidget {
                   gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Colors.redAccent, Colors.pinkAccent])),
+                      colors: [Colors.white, Colors.white10])),
               child: Container(
                 width: double.infinity,
                 height: 350.0,

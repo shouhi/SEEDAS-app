@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:seedas/owners/signIn.dart';
 import 'package:seedas/widgets/fade_animation.dart';
-
-// import 'package:pro_task/views/signup.dart';
-// import 'package:pro_task/views/signin.dart';
+import 'package:seedas/importer.dart';
 
 class Welcome extends StatelessWidget {
   @override
@@ -33,7 +30,7 @@ class Welcome extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => SignIn()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Signup()));
                     },
                     color: Colors.yellow,
                     shape: RoundedRectangleBorder(
