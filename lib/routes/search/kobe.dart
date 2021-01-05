@@ -23,7 +23,7 @@ class _TestScreenState extends State<TestScreen> {
               child: GridView.count(crossAxisCount: 2,primary: false,crossAxisSpacing: 10.0,mainAxisSpacing: 15.0,childAspectRatio: 0.8,
               children: <Widget>[
                 _buildCard("飯とおかず 酒と肴 花", "兵庫県神戸市中央区加納町4-7-2 アルバビル 5F", "assets/Icon/client1.jpeg", true, context),
-                _buildCard("スナック Magie", "兵庫県神戸市中央区加納町４丁目９−１２", "assets/Icon/client2.jpeg", true, context),
+                _buildCard("Magie", "兵庫県神戸市中央区加納町４丁目９−１２", "assets/Icon/client2.jpeg", true, context),
                 _buildCard("MAGIE'S風", "兵庫県神戸市中央区下山手通１-５-４", "assets/Icon/client3.png", true, context)
               ],),
             )
@@ -33,7 +33,10 @@ class _TestScreenState extends State<TestScreen> {
 
   Widget _buildCard(String name,String locate, String imgPath,bool isFavorite, context) {
     return Padding(padding: EdgeInsets.only(top: 15.0, bottom: 5.0,left: 5.0,right: 5.0),
-    child: InkWell(onTap: (){},
+    child: InkWell(onTap: (){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => RootWidget()));
+    },
     child: Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
