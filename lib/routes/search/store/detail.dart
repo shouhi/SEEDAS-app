@@ -48,7 +48,7 @@ class DetailPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        "予約する",
+                        "交渉する",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
